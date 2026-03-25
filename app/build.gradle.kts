@@ -4,9 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.supercalculater"
-    compileSdk {
-        version = release(36)
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.supercalculater"
@@ -35,6 +33,7 @@ android {
 
 dependencies {
     implementation(libs.appcompat)
+    implementation("androidx.appcompat:appcompat:1.6.1")
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
